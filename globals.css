@@ -1,0 +1,71 @@
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* SELECTION */
+  *::selection {
+    background: "#aad500"
+  }
+  
+  pre::selection,
+  code::selection {
+    background: #aad500;
+    text-shadow: none;
+    opacity: 0.3;
+  }
+  
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #fff;
+    color: #212529;
+  }
+  
+  
+/* RESET */
+
+blockquote {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+figure,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
