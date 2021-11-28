@@ -1,0 +1,26 @@
+/* HEADER */
+.header-content {
+  /* Box-model */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  padding: 1rem 0;
+
+  /* Visual */
+  background-color: var(--second-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.header-content__logo {
+  /* Box-model */
+  margin: 0.8rem 0;
+}
+
+.header-content__branding span {
+  /* Visual */
+  color: #fff;
+
+  /* Typography */
+  font-size: 12px;
+}
