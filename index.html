@@ -4,26 +4,47 @@
     <title data-testid="title">Día de la madre - Falabella Colombia</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Landing page campaña de día de las madres"/>
+    <meta
+      name="description"
+      content="Landing page campaña de día de las madres"
+    />
     <meta name="keywords" content="falabella, moda, belleza, día de la madre" />
     <meta name="author" content="Brahian Cano" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
+    <!-- Load font from Google fonts  -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Load required CSS -->
     <link href="globals.css" rel="stylesheet" />
-    <script type="module" src="./web-components/component-category/index.js"></script>
+    <link href="/assets/css/landing.css" rel="stylesheet" />
+
+    <!-- Load web components -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    <script
+      type="module"
+      src="./web-components/component-category/index.js"
+    ></script>
   </head>
 
   <body>
+    <!-- HEADER -->
     <header>
-        <div>
-            <img src="" alt="LOGOTIPO">
+      <div class="header-content">
+        <div class="header-content__logo">
+          <a href="#!">
+            <img src="" alt="logotipo" />
+          </a>
         </div>
-        <div>
-            <span>  
-                <a href="#!"><b>¡No hagas filas! Agenda tu visita a tienda</b></a>, con el día, hora y la tienda que más te acomode.
-            </span>
+        <div class="header-content__branding">
+          <span>
+            <b>¡No hagas filas! <a href="#!">Agenda tu visita a tienda</a></b
+            >, con el día, hora y la tienda que más te acomode.
+          </span>
         </div>
+      </div>
     </header>
   </body>
 </html>
