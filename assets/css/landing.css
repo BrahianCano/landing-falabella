@@ -17,10 +17,21 @@
   margin: 0.8rem 0;
 }
 
-.header-content__branding span {
+.header-content__branding {
   /* Visual */
   color: #fff;
 
   /* Typography */
   font-size: 12px;
+}
+
+.header-content__branding i {
+  /* Box-model */
+  margin: 0px 8px;
+
+  /* Visual */
+  color: var(--main-color);
+
+  /* Typography */
+  font-size: 18px;
 }
