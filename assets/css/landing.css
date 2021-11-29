@@ -1,10 +1,4 @@
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 95%;
-}
-
-/* HEADER */
+/**** HEADER ****/
 .header-content {
   /* Box-model */
   display: flex;
@@ -43,43 +37,56 @@
   font-size: 18px;
 }
 
-/* HERO BANNER */
+
+
+/**** HERO BANNER ****/
 .banner-content {
+  /* Box-model */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 576px;
   width: 100%;
+  margin: 0 auto;
+
+  /* Visual */
   color: #fff;
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(
       to top right,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
     ),
-    url("../images/banner-madres-falabella-3.png");
+    url("../images/banner-madres-falabella.png");
 }
 
 .banner-content__sources {
+  /* Box-model */
   margin-top: 400px;
 }
 
 .banner-content__sources button {
-  transition: all 0.4s ease;
-  background-color: var(--second-color);
-  color: #fff;
-  padding: 10px 40px;
+  /* Box-model */
+  padding: 13px 40px;
+
+  /* Visual */
+  background-color: var(--main-color-darken);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 1px #333;
   cursor: pointer;
+  color: #fff;
+  transition: all 0.4s ease;
+
+  /* Typography */
+  font-weight: 600;
   outline: none;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 .banner-content__sources button:hover {
+  /* Visual */
   background-color: var(--main-color);
-  box-shadow: 0px 0px 8px 1px #333;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
