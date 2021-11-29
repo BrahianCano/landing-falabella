@@ -1,3 +1,9 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 95%;
+}
+
 /* HEADER */
 .header-content {
   /* Box-model */
@@ -23,6 +29,7 @@
 
   /* Typography */
   font-size: 12px;
+  text-align: center;
 }
 
 .header-content__branding i {
@@ -34,4 +41,45 @@
 
   /* Typography */
   font-size: 18px;
+}
+
+/* HERO BANNER */
+.banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 576px;
+  width: 100%;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/banner-madres-falabella-3.png");
+}
+
+.banner-content__sources {
+  margin-top: 400px;
+}
+
+.banner-content__sources button {
+  transition: all 0.4s ease;
+  background-color: var(--second-color);
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px #333;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.banner-content__sources button:hover {
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 8px 1px #333;
 }
