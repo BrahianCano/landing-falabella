@@ -59,7 +59,7 @@
     margin-top: 400px;
   }
 
-  .banner-content__sources button {
+  .banner-content__sources a {
     /* Box-model */
     padding: 13px 40px;
     /* Visual */
@@ -72,9 +72,10 @@
     transition: all 0.4s ease;
     /* Typography */
     text-transform: uppercase;
+    text-decoration: none;
   }
 
-  .banner-content__sources button:hover {
+  .banner-content__sources a:hover {
     /* Visual */
     background-color: var(--main-color-darken);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
@@ -181,10 +182,12 @@
 
 /**** CATEGORY ELECTRO ****/
 .electro-content {
+  /* Box-model */
   padding: 2rem 0px;
 }
 
   .electro-content__title {
+    /* Box-model */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -199,12 +202,14 @@
 
 /**** CATEGORY BELLEZA ****/
 .content-belleza {
+  /* Visual */
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.603);
   box-shadow: 0 0.5rem 1rem rgba(151, 118, 118, 0.15);
 }
 
   .content-belleza__action {
+    /* Box-model */
     margin: 1rem 0px;
     display: grid;
     align-items: center;
@@ -213,24 +218,30 @@
   }
   
   .content-belleza__img {
+    /* Box-model */
     height: 100%;
     text-align: center;
   }
 
   .content-belleza__img img {
+    /* Box-model */
     width: 100%;
     height: 100%;
+    /* Visual */
     border-radius: 10px 0px 0px 10px;
   }
 
   .content-belleza__text {
+    /* Box-model */
     width: 100%;
     padding: 1rem;
   }
 
   .content-belleza__text p {
-    font-size: 18px;
+    /* Box-model */
     margin-bottom: 1rem;
+    /* Typography */
+    font-size: 18px;
   }
 
   .content-belleza__text h3 {
@@ -246,12 +257,93 @@
   }
   
   .content-belleza__cards {
+    /* Box-model */
     display: grid;
     align-items: center;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
   }
 
+  
+/**** CARRUSEL ELECTRO ****/
+.slideshow-container {
+  /* Box-model */
+  width: 100%;
+  position: relative;
+  margin: 2rem auto;
+}
+
+  .mySlides {
+    /* Box-model */
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    /* Box-model */
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {

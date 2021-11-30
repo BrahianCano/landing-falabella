@@ -6,30 +6,37 @@ a:hover {
 }
 
 .content-belleza__card {
+    /* Box-model */
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
+    margin: 2rem 0px;
+    /* Visual */
     background-color: rgba(255, 255, 255, 0.603);
     box-shadow: 0 0.5rem 1rem rgba(151, 118, 118, 0.15);
-    margin: 2rem 0px;
   }
   
   .content-belleza__cardHead img {
+    /* Box-model */
     vertical-align: middle;
     width: 100%;
+    /* Visual */
     border-radius: 10px 10px 0px 0px;
   }
   
   .content-belleza__cardBody {
-    text-align: center;
-    font-size: 16px;
+    /* Box-model */
     padding: 2rem 0px;
+    text-align: center;
+    /* Typography */
+    font-size: 16px;
   }
   
   .content-belleza__cardBody h4 {
-    text-align: center;
+    /* Box-model */
     margin: 1rem 0px;
+    text-align: center;
   }

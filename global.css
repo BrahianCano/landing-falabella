@@ -37,7 +37,7 @@ html::-webkit-scrollbar-track:active {
 *:after,
 *:before {
   /* Box-model */
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 *::selection {
