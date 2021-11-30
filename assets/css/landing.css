@@ -48,8 +48,8 @@
   background-size: cover;
   background-image: linear-gradient(
       to top right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
     ),
     url("../images/banner-madres-falabella.png");
 }
@@ -113,15 +113,15 @@
 
 .category-content-subtitle h2 {
   /* Typography */
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 500;
 }
 
-.category-content-subtitle hr {
+hr {
   /* Box-model */
   border-bottom: 1px solid var(--main-color);
   width: 70px;
-  margin: 10px auto;
+  margin: 9px 0px;
 }
 
 .category-content__items {
@@ -148,34 +148,42 @@
   /* Box-model */
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 5px;
 }
 
 .category-moda__column {
   /* Box-model */
   flex: 33%;
   max-width: 33%;
-  padding: 0 4px;
+  padding: 0 5px;
 }
 
 .category-moda__title {
   /* Box-model */
   display: flex;
+  flex-direction: column;
   height: 150px;
-  align-items: flex-end;
+  justify-content: flex-end;
   padding: 1rem;
 }
 
 .category-moda__title h3 {
   /* Typography */
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 400;
 }
+
 .category-moda__column img {
   /* Box-model */
-  margin-top: 8px;
+  margin-top: 10px;
   vertical-align: middle;
   width: 100%;
+}
+
+.category-moda__column img:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

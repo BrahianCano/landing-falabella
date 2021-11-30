@@ -27,7 +27,7 @@ class ComponentCategory extends HTMLElement {
       <div class="category-card">
         <div class="category-card__img">
           <a href="#!">
-            <img src="${this.state.img}"/>
+            <img src="${this.state.img}" alt="${this.state.name}"/>
           </a>
         </div>
         <div class="category-card__text">
