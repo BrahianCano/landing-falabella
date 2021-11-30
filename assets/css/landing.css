@@ -6,7 +6,6 @@
   align-items: center;
   max-width: 100vw;
   padding: 1rem 0;
-
   /* Visual */
   background-color: var(--second-color);
   border-bottom: 3px solid var(--main-color);
@@ -20,7 +19,6 @@
 .header-content__branding {
   /* Visual */
   color: #fff;
-
   /* Typography */
   font-size: 12px;
   text-align: center;
@@ -29,15 +27,11 @@
 .header-content__branding i {
   /* Box-model */
   margin: 0px 8px;
-
   /* Visual */
   color: var(--main-color);
-
   /* Typography */
   font-size: 18px;
 }
-
-
 
 /**** HERO BANNER ****/
 .banner-content {
@@ -48,7 +42,6 @@
   height: 576px;
   width: 100%;
   margin: 0 auto;
-
   /* Visual */
   color: #fff;
   background-position: center;
@@ -69,7 +62,6 @@
 .banner-content__sources button {
   /* Box-model */
   padding: 13px 40px;
-
   /* Visual */
   background-color: var(--main-color-darken);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -78,7 +70,6 @@
   cursor: pointer;
   color: #fff;
   transition: all 0.4s ease;
-
   /* Typography */
   font-weight: 600;
   outline: none;
@@ -90,3 +81,61 @@
   background-color: var(--main-color);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
+
+/**** ABOUT CATEGORY ****/
+.about-category {
+  /* Box-model */
+  padding: 4rem;
+}
+
+.about-category p {
+  /* Typography */
+  font-size: 16px;
+  text-align: center;
+}
+
+/**** CATEGORIES ****/
+.category-content {
+  /* Box-model */
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.category-content-subtitle {
+  /* Box-model */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0px;
+}
+
+.category-content-subtitle h3 {
+  /* Typography */
+  font-size: 20px;
+}
+
+.category-content-subtitle hr {
+  /* Box-model */
+  border-bottom: 1px solid var(--main-color);
+  width: 70px;
+  margin: 10px auto;
+}
+
+.category-content__items {
+  /* Box-model */
+  padding: 2rem 0px;
+  display: grid;
+  align-items: center;
+  gap: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 7rem), 1fr));
+}
+
+.category-content__item {
+  /* Box-model */
+  grid-column: span 2;
+}
+
+/**** CATEGORY MODA ****/

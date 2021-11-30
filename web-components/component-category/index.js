@@ -22,12 +22,16 @@ class ComponentCategory extends HTMLElement {
 
   render() {
     this.shadow.innerHTML = `
-      <link href="web-components/component-category/styleguide.css" rel="stylesheet">  
-      
+      <link href="./web-components/component-category/styleguide.css" rel="stylesheet">  
+    
       <div class="category-card">
-        <img src="${this.state.img}"/>
-        <div>
-          <h3>${this.state.name}</h3>
+        <div class="category-card__img">
+          <a href="#!">
+            <img src="${this.state.img}"/>
+          </a>
+        </div>
+        <div class="category-card__text">
+          <h3>${this.state.name} ></h3>
         </div>
       </div>`;
   }

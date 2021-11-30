@@ -27,13 +27,7 @@
 
     <!-- Load required CSS -->
     <link href="global.css" rel="stylesheet" />
-    <link href="/assets/css/landing.css" rel="stylesheet" />
-
-    <!-- Load web components -->
-    <script
-      type="module"
-      src="./web-components/component-category/index.js"
-    ></script>
+    <link href="./assets/css/landing.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -63,6 +57,57 @@
         </div>
       </div>
     </section>
-    <main class="container"></main>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <!-- ABOUT CATEGORY -->
+      <section>
+        <div class="about-category">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error
+            impedit nam quia inventore, beatae accusantium quo omnis dicta eum,
+            rem veniam tempore amet. Qui labore dolorum ducimus tempora aut!
+          </p>
+        </div>
+      </section>
+      <!-- CATEGORIES -->
+      <section>
+        <div class="category-content">
+          <div class="category-content-subtitle">
+            <h3>Selecciona tu categoria</h3>
+            <hr />
+          </div>
+          <div class="category-content__items">
+            <div class="category-content__item">
+              <fblla-category
+                name="Moda"
+                img="https://images.contentstack.io/v3/assets/blt088e6fffbba20f16/blt535b66a1a2e714de/5f7e42f1879de80eb41b1744/mujer.svg"
+              ></fblla-category>
+            </div>
+            <div class="category-content__item">
+              <fblla-category
+                name="Electro"
+                img="https://images.contentstack.io/v3/assets/blt088e6fffbba20f16/blt4ae4de7264ba00f8/5f7e42dcbd99c90e9ce91fea/electro.svg"
+              ></fblla-category>
+            </div>
+            <div class="category-content__item">
+              <fblla-category
+                name="Belleza"
+                img="https://images.contentstack.io/v3/assets/blt088e6fffbba20f16/blt4d98b55635ecb2ca/6037ec9ef54af27503f2ddff/header-bag-mobile.svg"
+              ></fblla-category>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- COLLAGE MODA -->
+      <section>
+        <div class="category-moda">
+          
+        </div>
+      </section>
+    </main>
+
+    <!-- Load web components -->
+    <script src="./web-components/component-category/index.js"></script>
   </body>
 </html>

@@ -2,12 +2,35 @@
   --main-color: #aad500;
   --main-color-darken: #9fc700;
   --second-color: #333;
-  --background-color: #acb1b6;
+  --background-color: #fafafc;
 }
 
 html {
   /* Box-model */
   box-sizing: border-box;
+}
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+html::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+html::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+html::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+html::-webkit-scrollbar-track:hover,
+html::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
 }
 
 *,
@@ -29,14 +52,12 @@ body {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
-
   /* Typography */
   font-family: "Lato", sans-serif;
   font-size: 13px;
-
   /* Visual */
-  background-color: #fff;
-  color: var(--background-color);
+  background-color: var(--background-color);
+  color: var(--second-color);
 }
 
 fieldset {
