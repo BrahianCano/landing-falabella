@@ -270,7 +270,7 @@
   /* Box-model */
   width: 100%;
   position: relative;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
   .mySlides {
@@ -306,7 +306,7 @@
   }
 
   .text {
-    color: #f2f2f2;
+    color: var(--second-color);
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -325,8 +325,8 @@
 
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -343,6 +343,35 @@
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+  }
+
+  .slideshow-container__button{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .slideshow-container__button button {
+    /* Box-model */
+    padding: 13px 40px;
+    /* Visual */
+    background-color: var(--main-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease;
+    /* Typography */
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .slideshow-container__button button:hover {
+    /* Visual */
+    background-color: var(--main-color-darken);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    transform: scale(1.1);
   }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
