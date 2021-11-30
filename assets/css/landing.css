@@ -11,27 +11,27 @@
   border-bottom: 3px solid var(--main-color);
 }
 
-.header-content__logo {
-  /* Box-model */
-  margin: 0.8rem 0;
-}
+  .header-content__logo {
+    /* Box-model */
+    margin: 0.8rem 0;
+  }
 
-.header-content__branding {
-  /* Visual */
-  color: #fff;
-  /* Typography */
-  font-size: 12px;
-  text-align: center;
-}
+  .header-content__branding {
+    /* Visual */
+    color: #fff;
+    /* Typography */
+    font-size: 12px;
+    text-align: center;
+  }
 
-.header-content__branding i {
-  /* Box-model */
-  margin: 0px 8px;
-  /* Visual */
-  color: var(--main-color);
-  /* Typography */
-  font-size: 18px;
-}
+  .header-content__branding i {
+    /* Box-model */
+    margin: 0px 8px;
+    /* Visual */
+    color: var(--main-color);
+    /* Typography */
+    font-size: 18px;
+  }
 
 /**** HERO BANNER ****/
 .banner-content {
@@ -54,89 +54,82 @@
     url("../images/banner-madres-falabella.png");
 }
 
-.banner-content__sources {
-  /* Box-model */
-  margin-top: 400px;
-}
+  .banner-content__sources {
+    /* Box-model */
+    margin-top: 400px;
+  }
 
-.banner-content__sources button {
-  /* Box-model */
-  padding: 13px 40px;
-  /* Visual */
-  background-color: var(--main-color);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  transition: all 0.4s ease;
-  /* Typography */
-  text-transform: uppercase;
-}
+  .banner-content__sources button {
+    /* Box-model */
+    padding: 13px 40px;
+    /* Visual */
+    background-color: var(--main-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.4s ease;
+    /* Typography */
+    text-transform: uppercase;
+  }
 
-.banner-content__sources button:hover {
-  /* Visual */
-  background-color: var(--main-color-darken);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  transform: scale(1.1);
-}
+  .banner-content__sources button:hover {
+    /* Visual */
+    background-color: var(--main-color-darken);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    transform: scale(1.1);
+  }
 
 /**** ABOUT CATEGORY ****/
 .about-category {
   /* Box-model */
-  padding: 4rem;
+  padding: 3.5rem;
 }
 
-.about-category p {
-  /* Typography */
-  font-size: 17px;
-  text-align: center;
-}
+  .about-category p {
+    /* Typography */
+    font-size: 20px;
+    text-align: center;
+  }
 
 /**** CATEGORIES ****/
 .category-content {
   /* Box-model */
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.603);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(151, 118, 118, 0.15);
 }
 
-.category-content-subtitle {
-  /* Box-model */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0px;
-}
+  .category-content-subtitle {
+    /* Box-model */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0px;
+  }
 
-.category-content-subtitle h2 {
-  /* Typography */
-  font-size: 25px;
-  font-weight: 500;
-}
+  .category-content-subtitle h2 {
+    /* Typography */
+    font-size: 26px;
+    font-weight: 500;
+  }
 
-hr {
-  /* Box-model */
-  border-bottom: 1px solid var(--main-color);
-  width: 70px;
-  margin: 9px 0px;
-}
+  .category-content__items {
+    /* Box-model */
+    padding: 2rem 0px;
+    display: grid;
+    align-items: center;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 7rem), 1fr));
+  }
 
-.category-content__items {
-  /* Box-model */
-  padding: 2rem 0px;
-  display: grid;
-  align-items: center;
-  gap: 5rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 7rem), 1fr));
-}
-
-.category-content__item {
-  /* Box-model */
-  grid-column: span 2;
-}
+  .category-content__item {
+    /* Box-model */
+    grid-column: span 2;
+  }
 
 /**** CATEGORY MODA ****/
 .category-moda {
@@ -144,53 +137,130 @@ hr {
   padding: 4rem 0px;
 }
 
-.category-moda__row {
-  /* Box-model */
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 5px;
+  .category-moda__row {
+    /* Box-model */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+
+  .category-moda__column {
+    /* Box-model */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 5px;
+  }
+
+  .category-moda__title {
+    /* Box-model */
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+  .category-moda__title h3 {
+    /* Typography */
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .category-moda__column img {
+    /* Box-model */
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .category-moda__column img:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+
+/**** CATEGORY ELECTRO ****/
+.electro-content {
+  padding: 2rem 0px;
 }
 
-.category-moda__column {
-  /* Box-model */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 5px;
+  .electro-content__title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .electro-content__title h3 {
+    /* Typography */
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+/**** CATEGORY BELLEZA ****/
+.content-belleza {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.603);
+  box-shadow: 0 0.5rem 1rem rgba(151, 118, 118, 0.15);
 }
 
-.category-moda__title {
-  /* Box-model */
-  display: flex;
-  flex-direction: column;
-  height: 150px;
-  justify-content: flex-end;
-  padding: 1rem;
-}
+  .content-belleza__action {
+    margin: 1rem 0px;
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  }
+  
+  .content-belleza__img {
+    height: 100%;
+    text-align: center;
+  }
 
-.category-moda__title h3 {
-  /* Typography */
-  font-size: 25px;
-  font-weight: 400;
-}
+  .content-belleza__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+  }
 
-.category-moda__column img {
-  /* Box-model */
-  margin-top: 10px;
-  vertical-align: middle;
-  width: 100%;
-}
+  .content-belleza__text {
+    width: 100%;
+    padding: 1rem;
+  }
 
-.category-moda__column img:hover {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
+  .content-belleza__text p {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .content-belleza__text h3 {
+    /* Typography */
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .content-belleza__text a {
+    /* Typography */
+    font-size: 17px;
+    text-decoration: none;
+  }
+  
+  .content-belleza__cards {
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  }
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .category-moda__column {
     flex: 50%;
     max-width: 50%;
+  }
+  .content-belleza__img img {
+    border-radius: 0px;
   }
 }
 
@@ -199,5 +269,8 @@ hr {
   .category-moda__column {
     flex: 100%;
     max-width: 100%;
+  }
+  .content-belleza__img img {
+    border-radius: 0px;
   }
 }

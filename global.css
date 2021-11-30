@@ -91,6 +91,13 @@ a:hover {
   color: var(--main-color);
 }
 
+hr {
+  /* Box-model */
+  border-bottom: 1px solid var(--main-color);
+  width: 70px;
+  margin: 9px 0px;
+}
+
 .container {
   /* Box-model */
   max-width: 1280px;
