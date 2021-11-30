@@ -63,7 +63,7 @@
   /* Box-model */
   padding: 13px 40px;
   /* Visual */
-  background-color: var(--main-color-darken);
+  background-color: var(--main-color);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   border: none;
@@ -71,15 +71,14 @@
   color: #fff;
   transition: all 0.4s ease;
   /* Typography */
-  font-weight: 600;
-  outline: none;
   text-transform: uppercase;
 }
 
 .banner-content__sources button:hover {
   /* Visual */
-  background-color: var(--main-color);
+  background-color: var(--main-color-darken);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  transform: scale(1.1);
 }
 
 /**** ABOUT CATEGORY ****/
@@ -90,16 +89,16 @@
 
 .about-category p {
   /* Typography */
-  font-size: 16px;
+  font-size: 17px;
   text-align: center;
 }
 
 /**** CATEGORIES ****/
 .category-content {
   /* Box-model */
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.603);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
@@ -112,9 +111,10 @@
   padding: 1rem 0px;
 }
 
-.category-content-subtitle h3 {
+.category-content-subtitle h2 {
   /* Typography */
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 500;
 }
 
 .category-content-subtitle hr {
@@ -139,3 +139,57 @@
 }
 
 /**** CATEGORY MODA ****/
+.category-moda {
+  /* Box-model */
+  padding: 4rem 0px;
+}
+
+.category-moda__row {
+  /* Box-model */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.category-moda__column {
+  /* Box-model */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.category-moda__title {
+  /* Box-model */
+  display: flex;
+  height: 150px;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.category-moda__title h3 {
+  /* Typography */
+  font-size: 28px;
+  font-weight: 400;
+}
+.category-moda__column img {
+  /* Box-model */
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .category-moda__column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .category-moda__column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

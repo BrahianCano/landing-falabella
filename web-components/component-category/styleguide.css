@@ -12,8 +12,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   /* Visual */
   background-color: var(--main-color);
   color: #fff;
@@ -32,10 +32,11 @@
 
 .category-card__img img {
   /* Box-model */
-  width: 80px;
+  width: 100px;
 }
 
 .category-card__text {
   /* Typography */
   text-align: center;
+  font-size: 15px;
 }
